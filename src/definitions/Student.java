@@ -69,4 +69,13 @@ public class Student {
         result = 31 * result + Arrays.hashCode(booksIssuedByStudent);
         return result;
     }
+    @Override
+    public String toString() {
+        return "Student{" +
+                "nameOfStudent='" + nameOfStudent + '\'' +
+                ", universityRollNumberOfStudent=" + universityRollNumberOfStudent +
+                ", numberOfBooksIssuedByStudent=" + numberOfBooksIssuedByStudent +
+                ", booksIssuedByStudent=" + Arrays.toString(booksIssuedByStudent) +
+                '}';
+    }
 }
