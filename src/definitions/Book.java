@@ -57,4 +57,13 @@ public class Book {
     public int hashCode() {
         return Objects.hash(nameOfBook, nameOfAuthorOfBook, isbnNumberOfBook);
     }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "nameOfBook='" + nameOfBook + '\'' +
+                ", nameOfAuthorOfBook='" + nameOfAuthorOfBook + '\'' +
+                ", isbnNumberOfBook='" + isbnNumberOfBook + '\'' +
+                '}';
+    }
 }
