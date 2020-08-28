@@ -52,4 +52,21 @@ public class Student {
         this.booksIssuedByStudent = booksIssuedByStudent;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return universityRollNumberOfStudent == student.universityRollNumberOfStudent &&
+                numberOfBooksIssuedByStudent == student.numberOfBooksIssuedByStudent &&
+                Objects.equals(nameOfStudent, student.nameOfStudent) &&
+                Arrays.equals(booksIssuedByStudent, student.booksIssuedByStudent);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(nameOfStudent, universityRollNumberOfStudent, numberOfBooksIssuedByStudent);
+        result = 31 * result + Arrays.hashCode(booksIssuedByStudent);
+        return result;
+    }
 }
