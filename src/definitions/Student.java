@@ -13,4 +13,5 @@ public class Student {
     private String nameOfStudent;
     private long universityRollNumberOfStudent;
     private int numberOfBooksIssuedByStudent;
+    private Book[] booksIssuedByStudent;
 }
