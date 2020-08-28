@@ -14,6 +14,14 @@ public class Student {
     private long universityRollNumberOfStudent;
     private int numberOfBooksIssuedByStudent;
     private Book[] booksIssuedByStudent;
+
+    public Student(String nameOfStudent, long universityRollNumberOfStudent, int numberOfBooksIssuedByStudent, Book[] booksIssuedByStudent) {
+        this.nameOfStudent = nameOfStudent;
+        this.universityRollNumberOfStudent = universityRollNumberOfStudent;
+        this.numberOfBooksIssuedByStudent = numberOfBooksIssuedByStudent;
+        this.booksIssuedByStudent = booksIssuedByStudent;
+    }
+
     public String getNameOfStudent() {
         return nameOfStudent;
     }
@@ -45,12 +53,6 @@ public class Student {
     public void setBooksIssuedByStudent(Book[] booksIssuedByStudent) {
         this.booksIssuedByStudent = booksIssuedByStudent;
     }
-    public Student(String nameOfStudent, long universityRollNumberOfStudent, int numberOfBooksIssuedByStudent, Book[] booksIssuedByStudent) {
-        this.nameOfStudent = nameOfStudent;
-        this.universityRollNumberOfStudent = universityRollNumberOfStudent;
-        this.numberOfBooksIssuedByStudent = numberOfBooksIssuedByStudent;
-        this.booksIssuedByStudent = booksIssuedByStudent;
-    }
 
     @Override
     public boolean equals(Object o) {
@@ -69,6 +71,7 @@ public class Student {
         result = 31 * result + Arrays.hashCode(booksIssuedByStudent);
         return result;
     }
+
     @Override
     public String toString() {
         return "Student{" +
