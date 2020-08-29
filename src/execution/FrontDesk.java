@@ -36,6 +36,9 @@ public class FrontDesk {
                     scanner.nextLine();
                     String isbnNumber = scanner.nextLine();
                     Book book = new Book(bookName, authorName, isbnNumber);
+                    student.addBook(book);
+                    break;
+
 
 
             }
