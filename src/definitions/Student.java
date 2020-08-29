@@ -13,9 +13,9 @@ public class Student {
     private String nameOfStudent;
     private long universityRollNumberOfStudent;
     private int numberOfBooksIssuedByStudent;
-    private String[] booksIssuedByStudent;
+    private Book[] booksIssuedByStudent;
 
-    public Student(String nameOfStudent, long universityRollNumberOfStudent, int numberOfBooksIssuedByStudent, String[] booksIssuedByStudent) {
+    public Student(String nameOfStudent, long universityRollNumberOfStudent, int numberOfBooksIssuedByStudent, Book[] booksIssuedByStudent) {
         this.nameOfStudent = nameOfStudent;
         this.universityRollNumberOfStudent = universityRollNumberOfStudent;
         this.numberOfBooksIssuedByStudent = numberOfBooksIssuedByStudent;
@@ -46,11 +46,11 @@ public class Student {
         this.numberOfBooksIssuedByStudent = numberOfBooksIssuedByStudent;
     }
 
-    public String[] getBooksIssuedByStudent() {
+    public Book[] getBooksIssuedByStudent() {
         return booksIssuedByStudent;
     }
 
-    public void setBooksIssuedByStudent(String[] booksIssuedByStudent) {
+    public void setBooksIssuedByStudent(Book[] booksIssuedByStudent) {
         this.booksIssuedByStudent = booksIssuedByStudent;
     }
 
