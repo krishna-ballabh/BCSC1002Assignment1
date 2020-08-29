@@ -1,7 +1,7 @@
 /*  Created by IntelliJ IDEA.
- *  User: Divyansh Bhardwaj (dbc2201)
- *  Date: 21/08/20
- *  Time: 3:49 PM
+ *  User: Krishna ballabh
+ *  Date: 29/08/20
+ *  Time: 2:38 PM
  *  File Name : Student.java
  * */
 package definitions;
@@ -83,7 +83,7 @@ public class Student {
                 '}';
     }
     public void addBook(Book book){
-        System.out.println(book.getNameOfBook()+" your book is issued. ");
+        System.out.println(book.getNameOfBook()+" book is issued. ");
     }
     public void returnPreviouslyIsssuedBook(String bookName){
         System.out.println(bookName+" is returned");
@@ -95,5 +95,4 @@ public class Student {
             System.out.println("Book"+(i+1));
         }
     }
-
 }
