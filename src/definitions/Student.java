@@ -21,6 +21,7 @@ public class Student {
         this.numberOfBooksIssuedByStudent = numberOfBooksIssuedByStudent;
         this.booksIssuedByStudent = booksIssuedByStudent;
     }
+    public Student(){ }
 
     public String getNameOfStudent() {
         return nameOfStudent;
@@ -81,4 +82,5 @@ public class Student {
                 ", booksIssuedByStudent=" + Arrays.toString(booksIssuedByStudent) +
                 '}';
     }
+
 }

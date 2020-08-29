@@ -21,7 +21,13 @@ public class FrontDesk {
                 "2. Return a previously issues book for me.\n" +
                 "3. Show me all my issues books.\n" +
                 "4. Exit.\n");
+        System.out.println("Enter your Name");
+        String nameOfStudent = scanner.nextLine();
+        System.out.println("Enter your University Roll Number");
+        long universityRollNumber = scanner.nextLong();
+        System.out.println("Enter your choice");
         int choice = scanner.nextInt();
+        scanner.nextLine();
         switch (choice) {
             case 1:
                 System.out.println("Enter Book Name : ");
@@ -33,6 +39,7 @@ public class FrontDesk {
                 scanner.nextLine();
                 String  isbnNumber = scanner.nextLine();
                 Book book = new Book(bookName, authorName, isbnNumber);
+
         }
 
     }
