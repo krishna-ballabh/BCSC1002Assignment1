@@ -85,5 +85,15 @@ public class Student {
     public void addBook(Book book){
         System.out.println(book.getNameOfBook()+" your book is issued. ");
     }
+    public void returnPreviouslyIsssuedBook(String bookName){
+        System.out.println(bookName+" is returned");
+    }
+
+    public void showAllBooks(){
+        booksIssuedByStudent = new Book[10];
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Book"+(i+1));
+        }
+    }
 
 }

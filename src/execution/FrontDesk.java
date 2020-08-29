@@ -38,9 +38,13 @@ public class FrontDesk {
                     Book book = new Book(bookName, authorName, isbnNumber);
                     student.addBook(book);
                     break;
-
-
-
+                case 2:
+                    System.out.println("Enter name of book which you want to return");
+                    String returnBookName = scanner.nextLine();
+                    student.returnPreviouslyIsssuedBook(returnBookName);
+                    break;
+                case 3:
+                    student.showAllBooks();
             }
         }while (true);
 
